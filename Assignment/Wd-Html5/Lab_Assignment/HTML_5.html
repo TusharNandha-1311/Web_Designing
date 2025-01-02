@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+</head>
+<body>
+    <h1>Create a audio video tag</h1>
+    <!-- Audio Tag -->
+    <h3>Audio Example</h3>
+    <audio src="" muted autoplay loop controls>
+    </audio>
+
+    <!-- Video Tag -->
+    <h3>Video Example</h3>
+    <video src="" controls>
+    </video>
+    <hr>
+    <!-- Canvas Tag   -->
+    <h3>Canvas Example</h3>
+    <canvas id="myCanavs"></canvas>
+    <script>
+        var cnv =document.getElementById("myCanavs")
+        var big = cnv.getContext("2d");
+        big.arc(95, 70, 60, 0, 2 * Math.PI);
+        big.fillStyle = "red";
+        big.fill();
+        big.stroke(); 
+    </script>
+    <hr>
+
+    <h3>Shapes with SVG</h3>
+    <svg width="500" height="500">
+        <!-- Rectangle -->
+        <rect x="10" y="10" width="250" height="200" fill="green" />
+    </svg>
+</body>
+</html>
